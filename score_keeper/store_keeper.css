@@ -1,0 +1,4 @@
+/* winning score turns green */
+.player_win {
+  color: green;
+}
