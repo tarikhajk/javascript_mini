@@ -16,17 +16,28 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="store_keeper.css" />
   </head>
-  <body class="pl-2">
-    <h1><span id="p1_disp">0</span> to <span id="p2_disp">0</span></h1>
-    <p>playing to:
-    <select name="Max number of games" id="">
-      <option value="3">3</option>
-      <option value="5">5</option>
-      <option value="7">7</option>
-    </select>
-    </p>
-    <button id="p1_button">Player 1</button><button id="p2_button">Player 2</button> <button id="reset">Reset</button>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1 class="display-1 mb-5">
+          <span id="p1_disp">0</span> to <span id="p2_disp">0</span>
+        </h1>
+        <p>Playing to: <input type="number" placeholder="3 games" /></p>
+        <p>
+          <button class="btn btn-outline-primary" id="p1_button">
+            Player 1
+          </button>
+          <button class="btn btn-outline-primary" id="p2_button">
+            Player 2
+          </button>
+        </p>
+        <button class="btn btn-secondary" id="reset">Reset</button>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
