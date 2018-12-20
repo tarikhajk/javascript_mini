@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #232323;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  min-height: 100%;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+span {
+  color: black;
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.25s;
+}
+
+button:hover {
+  background: steelblue;
+  color: white;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.selected {
+  background: steelblue;
+  color: white;
+}
+
+#container {
+  margin: 1% auto;
+  max-width: 1000px;
+}
+
+#stripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+}
+
+#stripe_content {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  height: 100%;
+}
+
+#message {
+  /* line height equal to stripe height to vertically center message */
+  line-height: 30px;
+}
+
+#picked_disp {
+  text-transform: uppercase;
+  color: inherit;
+  font-size: 4rem;
+}
+
+.square {
+  width: 18%;
+  padding-bottom: 18%;
+  float: left;
+  margin: 1%;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  border-radius: 15%;
+}
+.square_deco {
+  width: 18%;
+  padding-bottom: 18%;
+  float: left;
+  margin: 1%;
+  transition: background 0.6s;
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+  border-radius: 15%;
+}
