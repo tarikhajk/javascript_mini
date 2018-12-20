@@ -36,22 +36,33 @@ function player_action(score, display) {
   return score;
 }
 
+// resets all values and start a new round of games
 reset.addEventListener("click", function() {
-  location.reload(); // reloads page to reset all values and start a new round of games
+  removeWinnerStyle();
+  p1_score = 0;
+  p1_disp.textContent = p1_score;
+  p2_score = 0;
+  p2_disp.textContent = p2_score;
 });
 
 max_games.addEventListener("change", function() {
   max_score = Number(max_games.value);
-  while (max_score < 1) {
-    // must play atleast 1 game
-    max_score = prompt("Please enter a number of games greater than zero:");
+  if (max_score > p1_score && max_score > p2_score) {
+    while (max_score < 1) {
+      // must play atleast 1 game
+      max_score = prompt("Please enter a number of games greater than zero:");
+    }
+    this.value = max_score; // ensures input displays correct number of games if received from prompt
+    game_over = false;
+    removeWinnerStyle();
   }
-  this.value = max_score; // ensures input displays correct number of games if received from prompt
-  game_over = false;
+});
+
+function removeWinnerStyle() {
   p1_disp.classList.remove("player_win");
   p2_disp.classList.remove("player_win");
 
   // change reset button back to gray
   reset.classList.remove("btn-danger");
   reset.classList.add("btn-secondary");
-});
+}
