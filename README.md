@@ -15,7 +15,7 @@ Pick the color that matches the RGB value in the header! This version has some c
 - Player is able to click a button to generate new colors mid-game or play again once game is over. "easy" and "hard" buttons can not be reselected if button is already highlighted.
 - squares disappear with transition on wrong guesses.
 - Once player guesses correctly, background of header and all other squares reapper and transition to correct color. Additionally, "decoration squares" appear at the end of the game and transition *slightly slower* to the correct color to give an outward motion effect.
-- If after the player has won and the changed header background is too lite in color, header text changes to black, other wise, header text remains white. This is determined calculated based on the colors luminance.
+- If after the player has won and the changed header background is too lite in color, header text changes to black, other wise, header text remains white. This is determined calculated based on the color's luminance.
 
 ## Tech/framework used
 <b>Built with</b>
